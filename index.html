@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anime Hangman</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+   
+
+</head>
+<body>
+<h1 class="title">Welcome to Star Wars Battlesomething</h1>
+<!-- container controls width and height; also inline-flex for the simple structuring like bootstrapp-->
+<div class="container">
+   
+    <div class="row">
+        <div class="col right">
+           Here is where you'll have options to pick from  
+           <span id="photos"> <img src="assets/images/hangman10.png" alt="start"> </span>
+
+        </div>
+    <!-- row controls size to split container, currently using px, I wonder if % would do the same and scale better?-->
+        <div class="col left">  
+    <!--   span controls the autofill portion from javascript all using h6 to simplify formating but make them display in block; unsure if h6 is really even needed...
+            no reset used yet to currently just looks okay/ smaller than title. -->
+            <h6>Press any key to get started!</h6>
+            <h6>Wins <span id="wins">...</span></h6> 
+            <h6>CURRENT WORD</h6>
+            <h6><span id="mystery"></span></h6>
+            <h6>Number of Guesses Remaining </h6>
+            <h6><span id="G_remain">#</span></h6>
+            <h6>Letters Already Guessed</h6>
+            <h6><div id="G_array"></div></h6>
+        </div>  
+    </div>
+</div>
+    <!--    this is basically the HTML structure needed, and ive got some css to keep it formatted
+            on to javascript I think, more css to come after functionality is there since that'll take more work-->
+            <input type="text">
+</body>
+<script src="assets/javascript/game.js"></script>
+</html>
+
+
