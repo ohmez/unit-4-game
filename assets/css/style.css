@@ -52,3 +52,17 @@ h1 {
     margin-right: 30vw;
     color: white;
 }
+span#picked {
+    background: white;
+    padding: 20px;
+    margin: 5px;
+    border: 2px solid orange;
+    text-align: center;
+}
+span#enemies {
+    background: red;
+    padding: 20px;
+    margin: 5px;
+    border: 2px solid orange;
+    text-align: center;
+}

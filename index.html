@@ -7,6 +7,8 @@
     <title>Anime RPG</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
 </head>
 <body>
 <h1 class="title">Welcome to Anime RPG</h1>
@@ -15,18 +17,18 @@
     <p class="chose">Chose Your Character</p>
     <div class="row chose">
         <!-- Lets put images in this row-->
-        <span id="photos"> <h6>Naruto</h6> <img src="assets/images/naruto.png" alt="start" class="character"> <h6>150</h6> </span>
-        <span id="photos"> <h6>Sasuke</h6> <img src="assets/images/sasuke.png" alt="start" class="character"> <h6>100</h6> </span>
-        <span id="photos"> <h6>Orochimaru</h6>  <img src="assets/images/orochimaru.jpeg" alt="start" class="character"> <h6>120</h6> </span>
-        <span id="photos"> <h6>Zabuza</h6>  <img src="assets/images/zabuza.jpg" alt="start" class="character"> <h6>115</h6> </span>
+        <span id="photos" class="click"> <h6>Naruto</h6> <img src="assets/images/naruto.png" alt="start" class="character"> <h6 class="hp">150</h6> </span>
+        <span id="photos" class="click"> <h6>Sasuke</h6> <img src="assets/images/sasuke.png" alt="start" class="character"> <h6 class="hp">100</h6> </span>
+        <span id="photos" class="click"> <h6>Orochimaru</h6>  <img src="assets/images/orochimaru.jpeg" alt="start" class="character"> <h6 class="hp">120</h6> </span>
+        <span id="photos" class="click"> <h6>Zabuza</h6>  <img src="assets/images/zabuza.jpg" alt="start" class="character"> <h6 class="hp">115</h6> </span>
     </div>
     <p class="chosen">Your Character</p>
-    <div class="row chosen">
+    <div id="chosen" class="row chosen">
 
-        <span id="photos" class="chosen"> <img src="assets/images/StarwarsBackground.jpg" alt="starwarsbg" class="character"> </span>
+        <span id="photos" class="click" class="chosen"> <img src="assets/images/StarwarsBackground.jpg" alt="starwarsbg" class="character"> </span>
     </div>
-    <div class="row chosen enemies">
-        <p class="helptext">enemies available to attack</p>
+    <p class="helptext">enemies available to attack</p>
+    <div id="enemyarea" class="row chosen enemies">
     </div>
     <div class="fightsection chosen">
     <p class="helptext chosen">fight Section</p>
@@ -40,7 +42,6 @@
     <!--    this is basically the HTML structure needed, and ive got some css to keep it formatted
             on to javascript I think, more css to come after functionality is there since that'll take more work-->
 </body>
-<script src="assets/javascript/game.js"></script>
 </html>
 
 
