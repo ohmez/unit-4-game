@@ -66,3 +66,6 @@ span#enemies {
     border: 2px solid orange;
     text-align: center;
 }
+.dead {
+    display: none;
+}
