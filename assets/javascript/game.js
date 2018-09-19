@@ -115,8 +115,8 @@ function attack () {
      hh = parseInt(heroH);
      dh = parseInt(defenderH);
     // creates random attack numbers 
-    var da = getRandoNum(7,11);
-    var ha = getRandoNum(5,8);
+    var da = getRandoNum(6,11);
+    var ha = getRandoNum(4,6);
     // if statement to check if first attack has happened.
     if (attacked === false) { 
         lastdamage = parseInt(ha);
